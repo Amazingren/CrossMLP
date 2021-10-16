@@ -2,7 +2,7 @@
 The repository offers the official implementation of our BMVC 2021 paper in PyTorch.
 
 
-![Python 3.6](https://img.shields.io/badge/python-3.6.9-green.svg)
+![Python 3.6](https://img.shields.io/badge/python-3.6.13-green.svg)
 ![Packagist](https://img.shields.io/badge/Pytorch-0.4.1-red.svg)
 ![Last Commit](https://img.shields.io/github/last-commit/Amazingren/CIT)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)]((https://github.com/Amazingren/CIT/graphs/commit-activity))
@@ -11,6 +11,7 @@ The repository offers the official implementation of our BMVC 2021 paper in PyTo
 
 # Cascaded Cross MLP-Mixer GANs forCross-View Image Translation (CrossMLP)
 
+Code coming soon...
 
 
 ## Contributions
