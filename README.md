@@ -5,9 +5,12 @@
 ![Contributing](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
 ![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
 
-# Cascaded Cross MLP-Mixer GANs for Cross-View Image Translation (CrossMLP)
-
-The repository offers the official implementation of our BMVC 2021 ORAL paper in PyTorch.
+## CrossMLP
+**[Cascaded Cross MLP-Mixer GANs forCross-View Image Translation]()**  <br> 
+[Bin Ren](https://scholar.google.com/citations?user=Md9maLYAAAAJ&hl=en)<sup>1</sup>, [Hao Tang](https://scholar.google.com/citations?user=9zJkeEMAAAAJ&hl=en)<sup>2</sup>, [Nicu Sebe](https://scholar.google.com/citations?user=stFCYOAAAAAJ&hl=en)<sup>1</sup>. <br> 
+<sup>1</sup>University of Trento, Italy, <sup>2</sup>ETH, Switzerland.<br>
+In [BMVC 2021](https://www.bmvc2021.com/) **Oral**. <br>
+The repository offers the official implementation of our paper in PyTorch.
 
 Code coming soon...
 
