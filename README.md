@@ -12,7 +12,7 @@
 In [BMVC 2021](https://www.bmvc2021.com/) **Oral**. <br>
 The repository offers the official implementation of our paper in PyTorch.
 
-Code coming soon...
+Code coming soon (the end of November)...
 
 ## Contributions
 
