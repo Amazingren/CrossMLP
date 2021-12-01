@@ -12,6 +12,19 @@
 In [BMVC 2021](https://www.bmvc2021.com/) **Oral**. <br>
 The repository offers the official implementation of our paper in PyTorch.
 
+
+## Installation
+- Step1: Create a new virtual environment with anaconda
+ ```
+ conda create -n crossmlp python=3.6
+ ``` 
+
+- Step2: Install the required libraries
+```
+pip install -r requirement.txt
+```
+
+
 Code coming soon (the end of November)...
 
 ## Contributions
