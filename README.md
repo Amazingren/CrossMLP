@@ -51,10 +51,13 @@ bash ./datasets/download_selectiongan_dataset.sh [dataset_name]
 
 ## Evaluation
 
+## Generating Images Using Pretrained Model
 
-
-Code coming soon (the end of November)...
 
 ## Contributions
 
 If you have any questions/comments/bug reports, feel free to open a github issue or pull a request or e-mail to the author Bin Ren ([bin.ren@unitn.it](bin.ren@unitn.it)).
+
+
+## Acknowledgments
+This source code borrows heavily from Pix2pix and SelectionGAN. We also thank the authors X-Fork & X-Seq for providing the evaluation codes. This work was supported by the EU H2020 AI4Media No.951911project and by the PRIN project PREVUE.
