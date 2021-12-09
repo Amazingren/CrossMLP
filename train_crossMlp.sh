@@ -1,4 +1,4 @@
-python train.py --dataroot /data0/bren/projects/x_view/SelectionGAN/selectiongan_v1/datasets/dayton_ablation \
+python train.py --dataroot [path_to_dataset] \
 --name crossMlp_dayton_ablation \
 --model crossmlpgan \
 --which_model_netG unet_256 \

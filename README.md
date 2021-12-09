@@ -12,6 +12,7 @@
 In [BMVC 2021](https://www.bmvc2021.com/) **Oral**. <br>
 The repository offers the official implementation of our paper in PyTorch.
 
+:t-rex:News!  We have updated the proposed CrossMLP(December 9th, 2021)!
 
 ## Installation
 - Step1: Create a new virtual environment with anaconda
@@ -44,15 +45,60 @@ bash ./datasets/download_selectiongan_dataset.sh [dataset_name]
 - `cvusa`: 1.3 GB
 
 ## Training
+Run the `train_crossMlp.sh`, whose content is shown as follows
 
+```
+python train.py --dataroot [path_to_dataset] \
+	--name [experiment_name] \
+	--model crossmlpgan \
+	--which_model_netG unet_256 \
+	--which_direction AtoB \
+	--dataset_mode aligned \
+	--norm batch \
+	--gpu_ids 0 \
+	--batchSize [BS] \
+	--loadSize [LS] \
+	--fineSize [FS] \
+	--no_flip \
+	--display_id 0 \
+	--lambda_L1 100 \
+	--lambda_L1_seg 1
+```
+- For dayton or dayton_ablation dataset, [BS,LS,FS]=[4,286,256], set `--niter 20 --niter_decay 15`
+- For cvusa dataset, [BS,LS,FS]=[4,286,256], set `--niter 15 --niter_decay 15`
+
+There are many options you can specify. Please use `python train.py --help`. The specified options are printed to the console. To specify the number of GPUs to utilize, use `export CUDA_VISIBLE_DEVICES=[GPU_ID]`. Training will cost about 3 days for `dayton` , less than 2 days for `dayton_ablation`, and less than 3 days for `cvusa`  with the default `--batchSize` on one TITAN Xp GPU (12G). So we suggest you use a larger --batchSize, while performance is not tested using a larger --batchSize
+
+To view training results and loss plots on local computers, set --display_id to a non-zero value and run python -m visdom.server on a new terminal and click the URL http://localhost:8097. On a remote server, replace localhost with your server's name, such as http://server.trento.cs.edu:8097.
 
 ## Testing
+Run the `test_crossMlp.sh`, whose content is shown as follows:
+```
+python test.py --dataroot [path_to_dataset] \
+--name crossMlp_dayton_ablation \
+--model crossmlpgan \
+--which_model_netG unet_256 \
+--which_direction AtoB \
+--dataset_mode aligned \
+--norm batch \
+--gpu_ids 0 \
+--batchSize 8 \
+--loadSize 286 \
+--fineSize 256 \
+--saveDisk  \ 
+--no_flip --eval
+```
+By default, it loads the latest checkpoint. It can be changed using `--which_epoch`.
 
+We also provide image IDs used in our paper [here](https://github.com/Amazingren/CrossMLP/blob/main/scripts/Image_ids.txt) for further qualitative comparsion.
 
 ## Evaluation
 
+Coming soon
+
 ## Generating Images Using Pretrained Model
 
+Coming soon
 
 ## Contributions
 
