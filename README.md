@@ -37,7 +37,6 @@ Preparing CVUSA Dataset. The dataset can be downloaded [here](http://mvrl.cs.uky
 🌲 Note that for your convenience we also provide download scripts:
 ```
 bash ./datasets/download_selectiongan_dataset.sh [dataset_name]
-
 ```
 [dataset_name] can be:
 - `dayton_ablation` : 5.7 GB
