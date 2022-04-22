@@ -107,4 +107,4 @@ If you have any questions/comments/bug reports, feel free to open a github issue
 
 
 ## Acknowledgments
-This source code borrows heavily from Pix2pix and SelectionGAN. We also thank the authors X-Fork & X-Seq for providing the evaluation codes. This work was supported by the EU H2020 AI4Media No.951911project and by the PRIN project PREVUE.
+This source code borrows heavily from [SelectionGAN](https://github.com/Ha0Tang/SelectionGAN). We also thank the authors X-Fork & X-Seq for providing the evaluation codes. This work was supported by the EU H2020 AI4Media No.951911project and by the PRIN project PREVUE.
